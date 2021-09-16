@@ -1,0 +1,35 @@
+.user{
+  table{
+     margin-top: 80px;
+    thead{
+      tr{
+        th{
+          text-align: center;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          text-align: center  ;
+        }
+      }
+    }
+  }
+}
+.editUser{
+  box-shadow: 1px 1px 29px -18px #6c757d;
+  padding: 10px 20px;
+  margin-top: 150px;
+  border-radius: -1px;
+  border: 1px groove #ff000036;
+  border-radius: 5px;
+  h6{
+    text-align: center;
+
+  }
+   div{
+     text-align: right;
+
+   }
+}

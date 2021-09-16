@@ -1,0 +1,31 @@
+{
+  "name": "FornEnd",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test:e2e": "nightwatch"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.15.2",
+    "js-cookie": "^3.0.0",
+    "nuxt": "^2.15.7",
+    "vue-axios": "^3.2.4"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "chromedriver": "^89.0.0",
+    "fibers": "^5.0.0",
+    "nightwatch": "^1.7.7",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.2.0"
+  }
+}
