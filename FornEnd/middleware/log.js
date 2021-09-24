@@ -1,22 +1,23 @@
-import axios from "axios";
+// import axios from "axios";
+import {getters} from "~/store/auth";
+//
+// export default  ({ store, redirect , req }) => {
 
-export default async ({store, redirect}) => {
-  if (typeof localStorage === 'undefined') {
-    return redirect('/');
-  }
+//
+//     // If the user is not authenticated
+//     // if (!store.getters.state.a) {
+//            console.log("True" , store.getters.isAuthenticated);
+//          // return ;
+//      // }
+//     // console.log("fa" , store.state.authenticated);
+//
+// }
 
-  const token = localStorage.getItem('token');
 
-  if (token != null && token !== 'undefined') {
-    axios.defaults.headers.common.AUTHORIZATION = localStorage.getItem('token');
-    return;
-  }
-
-    delete axios.defaults.headers.common.Authorization;
-    return redirect('/');
-
+export default ({ store, redirect , req }) => {
+   store.dispatch('initAuth', req, redirect);
+  if(!store.getters.isAuthenticated) {
+       return redirect('/');
+   }
 
 }
-
-
-
