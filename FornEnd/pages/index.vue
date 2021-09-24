@@ -11,7 +11,7 @@
       <label>username</label>
       <input type="text" class="form-control" v-model="user.password">
     </div>
-    <div class="form-group col-md-12">
+    <div cla  ss="form-group col-md-12">
       <button type="submit" v-on:click="login()" class="btn btn-danger form-control mybtnColor"> Login</button>
     </div>
   </div>
